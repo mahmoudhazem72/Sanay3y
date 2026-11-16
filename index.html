@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صنايعي — الخدمة أقرب مما تتخيل | التطبيق الذكي للصيانة المنزلية</title>
+
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description"
+    content="تطبيق صنايعي (Sanay3y) يربط العملاء بأمهر الحرفيين والصنايعية المعتمدين في محيطك الجغرافي بدقة وأمان. حمّل التطبيق الآن بصيغة APK لأجهزة أندرويد.">
+  <meta name="keywords"
+    content="صنايعي, تطبيق صنايعي, صيانة منزلية, سباك, كهربائي, نجار, نقاش, فني صيانة, صيانة مصر, Sanay3y">
+  <meta name="author" content="Sanay3y Team">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="صنايعي — الخدمة أقرب مما تتخيل">
+  <meta property="og:description"
+    content="المنصة الذكية التي تجمع بين أصحاب المنازل والعملاء وبين أمهر الحرفيين والصنايعية المعتمدين بالقرب منك.">
+  <meta property="og:image" content="assets/app_icon.png">
+  <meta property="og:locale" content="ar_EG">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/app_icon.png">
+
+  <!-- Typography: Cairo Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       Site Header / Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="صنايعي الصفحة الرئيسية">
+        <div class="brand-icon-wrapper">
+          <img src="assets/app_icon.png" alt="شعار تطبيق صنايعي" class="brand-icon" width="44" height="44">
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">صنايعي</span>
+          <span class="brand-subtitle">خدمات صيانة موثوقة</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" aria-label="القائمة الرئيسية">
+        <a href="#about" class="nav-link">عن التطبيق</a>
+        <a href="#journey" class="nav-link">رحلة الاستخدام</a>
+        <a href="#how-it-works" class="nav-link">كيف يعمل؟</a>
+        <a href="#features" class="nav-link">المميزات</a>
+        <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <a href="https://drive.google.com/uc?export=download&id=1WtqTTzk5hcb3RIbgCh160lABSYzPp8bq"
+          class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" title="تحميل ملف APK لأجهزة أندرويد">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+          </svg>
+          <span>تحميل APK</span>
+          <span class="btn-apk-pill">أندرويد</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" aria-label="فتح القائمة الرئيسية" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Panel -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="قائمة الهاتف المحمول">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon-wrapper" style="width: 36px; height: 36px;">
+          <img src="assets/app_icon.png" alt="شعار صنايعي" class="brand-icon">
+        </div>
+        <span class="brand-title" style="font-size: 1.2rem;">صنايعي</span>
+      </div>
+      <button class="drawer-close-btn" aria-label="إغلاق القائمة">✕</button>
+    </div>
+
+    <nav class="drawer-nav-list">
+      <a href="#about" class="drawer-nav-link">عن التطبيق</a>
+      <a href="#journey" class="drawer-nav-link">رحلة الاستخدام</a>
+      <a href="#how-it-works" class="drawer-nav-link">كيف يعمل؟</a>
+      <a href="#features" class="drawer-nav-link">المميزات</a>
+      <a href="#faq" class="drawer-nav-link">الأسئلة الشائعة</a>
+    </nav>
+
+    <a href="https://drive.google.com/uc?export=download&id=1WtqTTzk5hcb3RIbgCh160lABSYzPp8bq" class="btn btn-primary"
+      target="_blank" rel="noopener noreferrer" style="margin-top: auto;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+      </svg>
+      <span>تحميل تطبيق صنايعي (APK)</span>
+    </a>
+  </aside>
+
+  <main>
+    <!-- ========================================================================
+         1. Hero Section
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Hero Text Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span>المنصة الذكية الأولى للصيانة المنزلية بالقرب منك</span>
+            </div>
+
+            <h1 class="hero-headline">
+              صنايعي.. <br>
+              <span class="highlight">الخدمة أقرب مما تتخيل</span>
+            </h1>
+
+            <p class="hero-subtext">
+              تطبيق صنايعي يربط بين أصحاب المنازل الباحثين عن خدمات صيانة سريعة وموثوقة، وبين أمهر الحرفيين والصنايعية
+              المعتمدين في محيطك الجغرافي. مطابقة دقيقة، أمان تام، وتواصل مباشر.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="https://drive.google.com/uc?export=download&id=1WtqTTzk5hcb3RIbgCh160lABSYzPp8bq"
+                class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                </svg>
+                <span>حمّل تطبيق صنايعي الآن</span>
+                <span class="btn-apk-pill">APK لأندرويد</span>
+              </a>
+
+              <a href="#journey" class="btn btn-secondary btn-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>اكتشف طريقة الاستخدام</span>
+              </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="hero-trust-list">
+              <span class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>تحميل مجاني ومباشر (APK)</span>
+              </span>
+              <span class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>فحص واعتماد رسمي للحرفيين</span>
+              </span>
+              <span class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>خصوصية كاملة للعنوان والبيانات</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Clean App Mockup Frame -->
+          <div class="hero-visual-container">
+            <div class="mockup-backdrop-glow"></div>
+
+            <div class="phone-mockup-frame">
+              <div class="phone-screen">
+
+                <!-- Phone Top Bar -->
+                <div class="phone-top-bar">
+                  <span>10:30</span>
+                  <div class="phone-camera-notch"></div>
+                  <span>5G 📶 100%</span>
+                </div>
+
+                <!-- App Header -->
+                <div class="phone-app-header">
+                  <div class="app-header-brand">
+                    <img src="assets/app_icon.png" alt="أيقونة صنايعي" class="app-header-logo">
+                    <div>
+                      <div class="app-header-title">صنايعي</div>
+                      <div style="font-size: 0.65rem; color: var(--gray-light);">سوق الصيانة الذكي</div>
+                    </div>
+                  </div>
+                  <div class="app-header-badge">مصر 📍</div>
+                </div>
+
+                <!-- Screen Interactive Body -->
+                <div class="phone-screen-content">
+
+                  <!-- Wallet Status Widget -->
+                  <div class="mockup-wallet-pill">
+                    <div>
+                      <div class="wallet-balance-label">رصيد محفظة العملات</div>
+                      <div style="font-size: 0.72rem; color: var(--gray);">جاهز لفتح طلبات الصيانة</div>
+                    </div>
+                    <div class="wallet-balance-num">25 <span style="font-size: 0.75rem; font-weight: 600;">عملة</span>
+                    </div>
+                  </div>
+
+                  <!-- Real App Job Card Mockup (Worker Perspective) -->
+                  <div class="mockup-job-card">
+                    <div class="job-card-header">
+                      <span class="category-tag">
+                        🔧 سباكة وأدوات صحية
+                      </span>
+                      <span class="coin-cost-badge">5 عملات</span>
+                    </div>
+
+                    <div class="job-card-desc">
+                      تسريب مياه مفاجئ في خط الصرف تحت الحوض يتطلب فحص فوري ولحام محبس جديد...
+                    </div>
+
+                    <div class="job-card-meta">
+                      <span class="meta-distance">
+                        📍 2.4 كم من موقعك
+                      </span>
+                      <span>منطقة قريبة (مؤكد بالـ GPS)</span>
+                    </div>
+
+                    <div class="mockup-action-btn">
+                      عرض التفاصيل وشراء الطلب
+                    </div>
+                  </div>
+
+                  <!-- Second Card Mockup -->
+                  <div class="mockup-job-card" style="opacity: 0.9;">
+                    <div class="job-card-header">
+                      <span class="category-tag">
+                        ⚡ كهرباء وإنارة
+                      </span>
+                      <span class="coin-cost-badge">5 عملات</span>
+                    </div>
+
+                    <div class="job-card-desc">
+                      عطل في لوحة القواطع الرئيسية وتغيير مفاتيح الإنارة بالصالة...
+                    </div>
+
+                    <div class="job-card-meta">
+                      <span class="meta-distance">
+                        📍 3.8 كم من موقعك
+                      </span>
+                      <span>منطقة قريبة</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Notification Pill -->
+            <div class="floating-notif-card">
+              <div class="floating-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" />
+                </svg>
+              </div>
+              <div>
+                <div class="floating-title">طلب شغلانة جديدة قريب منك!</div>
+                <div class="floating-sub">فئة السباكة • على بعد 2.4 كم</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         2. About Sanay3y
+         ======================================================================== -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="section-tag">فكرة التطبيق</span>
+          <h2 class="section-title">صيانة منزلية ذكية، بدون عشوائية</h2>
+          <p class="section-desc">
+            تطبيق صنايعي صُمم لحل المعاناة اليومية في البحث عن فني صيانة موثوق، وفي الوقت نفسه يوفر للصنايعي فرص عمل
+            حقيقية ومنظمة بالقرب من مسكنه.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- Pillar 1: Customer -->
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="about-card-title">للعملاء: طلب الصيانة بكل بساطة</h3>
+            <p class="about-card-desc">
+              بدلاً من السؤال والانتظار، حدد مشكلتك، التقط موقعك بدقة عبر الـ GPS، وسيتولى التطبيق توجيه طلبك للفنيين
+              المتخصصين في منطقتك فوراً.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Professional -->
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="about-card-title">للصنايعية: شغل حقيقي في محيطك</h3>
+            <p class="about-card-desc">
+              لا داعي للبحث العشوائي. استكشف يومياً طلبات الصيانة القريبة من موقعك الجغرافي والتي تطابق مهنتك المعتمدة
+              فقط، واختر ما يناسبك.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Matching -->
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="22" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="12" x2="2" y2="12"></line>
+                <line x1="12" y1="6" x2="12" y2="2"></line>
+                <line x1="12" y1="22" x2="12" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="about-card-title">مطابقة جغرافية ومهنية ذكية</h3>
+            <p class="about-card-desc">
+              تتم مطابقة الطلبات خوارزمياً وفقاً للمهنة والمسافة الدقيقة حتى 15 كيلومتراً، لضمان وصول الفني في أسرع وقت
+              وتقليل تكلفة الانتقال.
+            </p>
+          </div>
+
+          <!-- Pillar 4: Privacy -->
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="about-card-title">خصوصية وأمان بيانات الطرفين</h3>
+            <p class="about-card-desc">
+              بيانات العميل (الاسم الكامل، رقم الهاتف، والعنوان الدقيق) تظل محمية ومحجوبة تماماً ولا تظهر للصنايعي إلا
+              بعد شراء الطلب رسمياً.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. Choose Your Journey
+         ======================================================================== -->
+    <section class="journey-section section-padding" id="journey">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="section-tag">اختر رحلتك</span>
+          <h2 class="section-title">صُمم ليناسب احتياجك بالكامل</h2>
+          <p class="section-desc">
+            سواء كنت صاحب منزل تبحث عن صيانة فورية، أو حرفياً محترفاً تريد زيادة دخلك، يوفر صنايعي تجربة مخصصة لكل طرف.
+          </p>
+
+          <!-- Interactive Tab Buttons -->
+          <div class="journey-tab-nav" role="tablist" aria-label="اختيار نوع الحساب">
+            <button class="journey-tab-btn active" data-tab="customer-journey" role="tab" aria-selected="true"
+              id="tab-cust">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>أنا عميل (أبحث عن خدمة صيانة)</span>
+            </button>
+
+            <button class="journey-tab-btn" data-tab="worker-journey" role="tab" aria-selected="false" id="tab-work">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+              <span>أنا صنايعي (أبحث عن فرص عمل)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab Content 1: Customer Journey -->
+        <div class="journey-tab-content active" id="customer-journey" role="tabpanel" aria-labelledby="tab-cust">
+          <div class="journey-steps-grid">
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">١</div>
+              <div class="step-content">
+                <h4>إنشاء الحساب في ثوانٍ</h4>
+                <p>سجّل حسابك كعميل باستخدام اسمك، رقم هاتفك المصري، وبريدك الإلكتروني لتأمين بياناتك وسهولة التواصل.
+                </p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٢</div>
+              <div class="step-content">
+                <h4>اختيار قسم الصيانة المطلوب</h4>
+                <p>اختر الحرفة المناسبة من قائمة التخصصات: سباكة، كهرباء، نجارة، نقاشة، أو غيرها من الخدمات المنزلية.
+                </p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٣</div>
+              <div class="step-content">
+                <h4>وصف المشكلة وتأكيد الـ GPS</h4>
+                <p>اكتب وصفاً واضحاً للعطل المطلوب إصلاحه، وأكّد إحداثيات موقعك عبر نظام تحديد المواقع (GPS) لضمان
+                  الدقة.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٤</div>
+              <div class="step-content">
+                <h4>نشر الطلب فوراً</h4>
+                <p>يتم بث طلبك فورياً إلى هواتف الفنيين المعتمدين والمتواجدين بالقرب من موقعك الجغرافي دون وسطاء.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٥</div>
+              <div class="step-content">
+                <h4>متابعة حالة الطلب لحظياً</h4>
+                <p>تابع شاشات الطلب لتشاهد تحول الحالة من "مفتوح" إلى "مُعين" بمجرد قيام فني معتمد بقبول وشراء طلبك.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٦</div>
+              <div class="step-content">
+                <h4>التواصل المباشر والإنجاز</h4>
+                <p>تظهر لك بيانات الصنايعي (الاسم والهاتف) للتنسيق معه عبر الاتصال أو الواتساب، وتأكيد إنهاء الصيانة بعد
+                  إتمامها.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab Content 2: Worker Journey -->
+        <div class="journey-tab-content" id="worker-journey" role="tabpanel" aria-labelledby="tab-work">
+          <div class="journey-steps-grid">
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">١</div>
+              <div class="step-content">
+                <h4>التسجيل واختيار التخصص</h4>
+                <p>سجّل حساب صنايعي وحدد مهنتك وتخصصك الحرفي بدقة لضمان استقبال طلبات الصيانة الملائمة لخبرتك.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٢</div>
+              <div class="step-content">
+                <h4>اعتماد الحساب من قِبل الإدارة</h4>
+                <p>يقوم فريق إدارة صنايعي بمراجعة وتأكيد بيانات الحرفي لضمان جودة المنصة وموثوقية الفنيين المعتمدين.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٣</div>
+              <div class="step-content">
+                <h4>استكشاف الطلبات القريبة</h4>
+                <p>تصفح قائمة الوظائف المتاحة في تخصصك والموجودة في محيطك الفعلي مع استلام إشعارات فورية بالطلبات
+                  الجديدة.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٤</div>
+              <div class="step-content">
+                <h4>معاينة المسافة والموقع التقريبي</h4>
+                <p>اطلع على المسافة بالكيلومتر والمنطقة العامة وتفاصيل العطل ووصفه قبل اتخاذ قرار شراء الطلب.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٥</div>
+              <div class="step-content">
+                <h4>شراء الطلب بعملات المحفظة</h4>
+                <p>استخدم رصيد العملات المتاح في محفظتك لفتح وتأكيد الطلب الذي ترغب في تنفيذه بعد المعاينة.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٦</div>
+              <div class="step-content">
+                <h4>الوصول لبيانات اتصال العميل</h4>
+                <p>بمجرد الشراء، تُكشف لك تفاصيل العميل كاملة: الاسم، رقم الهاتف المباشر، والعنوان التفصيلي وموقع الـ
+                  GPS.</p>
+              </div>
+            </div>
+
+            <div class="journey-step-card">
+              <div class="step-num-badge">٧</div>
+              <div class="step-content">
+                <h4>التواصل وإتمام العمل بنجاح</h4>
+                <p>تواصل مع العميل، تحرك لموقع العمل، أنجز الصيانة باحتراف، وأكّد إتمام الخدمة داخل التطبيق.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. How It Works (Visual 4 Phases)
+         ======================================================================== -->
+    <section class="how-it-works-section section-padding" id="how-it-works">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="section-tag">دورة العمل</span>
+          <h2 class="section-title">كيف تكتمل الخدمة في صنايعي؟</h2>
+          <p class="section-desc">
+            أربع خطوات واضحة ومؤتمتة تضمن إنجاز العمل بأعلى درجات الكفاءة والشفافية لكلا الطرفين.
+          </p>
+        </div>
+
+        <div class="timeline-phases">
+
+          <div class="phase-card">
+            <span class="phase-indicator">المرحلة ١</span>
+            <div class="phase-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
+            <h3 class="phase-title">نشر الطلب وتأكيد الـ GPS</h3>
+            <p class="phase-desc">
+              يقوم العميل باختيار القسم، كتابة المشكلة، وتأكيد موقعه الجغرافي الحي لحصر البحث.
+            </p>
+          </div>
+
+          <div class="phase-card">
+            <span class="phase-indicator">المرحلة ٢</span>
+            <div class="phase-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </div>
+            <h3 class="phase-title">إشعار الفنيين القريبين</h3>
+            <p class="phase-desc">
+              يرسل النظام تنبيهاً ذكياً فورياً لكافة الصنايعية المعتمدين والمطابقين للمهنة في النطاق المسموح.
+            </p>
+          </div>
+
+          <div class="phase-card">
+            <span class="phase-indicator">المرحلة ٣</span>
+            <div class="phase-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 12l-4-4-4 4M12 8v8"></path>
+              </svg>
+            </div>
+            <h3 class="phase-title">شراء الطلب وفك الحجب</h3>
+            <p class="phase-desc">
+              يقوم الفني بشراء الطلب بعملات محفظته، وبذلك يفتح النظام بيانات العميل بالكامل للتواصل.
+            </p>
+          </div>
+
+          <div class="phase-card">
+            <span class="phase-indicator">المرحلة ٤</span>
+            <div class="phase-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="phase-title">التنفيذ والتأكيد المشترك</h3>
+            <p class="phase-desc">
+              بعد زيارة الموقع وإنهاء التصليح، يؤكد الطرفان اكتمال العمل داخل التطبيق لتوثيق الإنجاز.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. Features
+         ======================================================================== -->
+    <section class="features-section section-padding" id="features">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="section-tag">المميزات الأساسية</span>
+          <h2 class="section-title">صُممت لراحتك، أمانك، ووضوح المعاملات</h2>
+          <p class="section-desc">
+            تم بناء كل تفصيلة في تطبيق صنايعي بناءً على متطلبات واقعية تضمن الشفافية والراحة لكل مستخدم.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <!-- Feature 1 -->
+          <div class="feature-box">
+            <div class="feature-header">
+              <div class="feature-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="feature-title">طلبات قريبة منك فعلياً</h3>
+            </div>
+            <p class="feature-desc">
+              خوارزمية حساب المسافات الجغرافية (Haversine Formula) تضمن إظهار الطلبات الواقعة في محيط العمل الفعلي حتى
+              15 كم كحد أقصى، مما يوفر وقت الوصول والتكلفة.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-box">
+            <div class="feature-header">
+              <div class="feature-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">ترشيح دقيق حسب التخصص</h3>
+            </div>
+            <p class="feature-desc">
+              لا عشوائية في الطلبات. الصنايعي يرى فقط الطلبات التي تطابق حرفته المسجلة (سباكة، كهرباء، نجارة...)،
+              والعميل لا يتلقى إلا استجابة من فني متخصص.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-box">
+            <div class="feature-header">
+              <div class="feature-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                  <line x1="12" y1="6" x2="12" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">محفظة وعملات عادلة ومباشرة</h3>
+            </div>
+            <p class="feature-desc">
+              نظام عملات رقمية (Coins) دقيق وموثق في سجل مالي غير قابل للتعديل. يتيح للصنايعي شراء تفاصيل الطلب الذي
+              يختاره بدون عمولات خفية.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-box">
+            <div class="feature-header">
+              <div class="feature-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="feature-title">تواصل آمن ومباشر</h3>
+            </div>
+            <p class="feature-desc">
+              تكامل مباشر مع الاتصال الهاتفي وتطبيق واتساب لتنسيق مواعيد المعاينة والبدء في أعمال الصيانة فوراً دون
+              انتظار أو وسطاء.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-box">
+            <div class="feature-header">
+              <div class="feature-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">متابعة حية لحالة الطلب</h3>
+            </div>
+            <p class="feature-desc">
+              تتبع فوري لمراحل الطلب عبر واجهات التطبيق والإشعارات اللحظية: من مرحلة "مفتوح"، إلى "مُعين لصنايعي"،
+              وصولاً إلى "مكتمل بنجاح".
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-box">
+            <div class="feature-header">
+              <div class="feature-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">تأكيد إنجاز ثنائي موثق</h3>
+            </div>
+            <p class="feature-desc">
+              لضمان أعلى معايير الجودة ورضا الطرفين، لا يعتبر الطلب منجزاً في سجلات المنصة إلا بعد تأكيد متطابق من
+              العميل والصنايعي على السواء.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. FAQ
+         ======================================================================== -->
+    <section class="faq-section section-padding" id="faq">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="section-tag">إجابات واضحة</span>
+          <h2 class="section-title">الأسئلة الشائعة</h2>
+          <p class="section-desc">
+            كل ما ترغب في معرفته حول آلية عمل التطبيق، الخصوصية، والتعاملات المعتمدة.
+          </p>
+        </div>
+
+        <div class="faq-accordion">
+
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>هل تحميل تطبيق صنايعي مجاني؟</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                نعم، تحميل تطبيق صنايعي وإنشاء الحساب (سواء كان حساب عميل أو حساب صنايعي) مجاني تماماً وبدون أي رسوم
+                اشتراك أو تسجيل.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>كيف ينشئ العميل طلب خدمة جديد؟</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                بمجرد تسجيل الدخول كعميل، اضغط على زر "طلب خدمة جديدة"، ثم اختر تخصص الصيانة المطلوب (سباكة، كهرباء،
+                نجارة...)، اكتب وصفاً واضحاً للعطل، وأكّد موقعك الجغرافي بالضغط على زر "تأكيد موقعي عبر الـ GPS"، ثم
+                اضغط "نشر الطلب".
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>كيف يتم اعتماد حساب الصنايعي بعد التسجيل؟</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                بعد تسجيل الحساب واختيار التخصص المهني، يدخل الحساب في حالة "قيد المراجعة" (Pending). يقوم فريق إدارة
+                صنايعي بفحص بيانات الحساب والتحقق منها. وبمجرد اعتماد الحساب من قِبل الإدارة، يصبح بإمكان الصنايعي
+                استكشاف وشراء طلبات الصيانة القريبة منه فوراً.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>ما هي عملات المحفظة (Coins) وكيف تعمل؟</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                عملات المحفظة هي نقاط افتراضية مخصصة للصنايعية داخل التطبيق. يحتاج الحرفي إلى عدد محدد من العملات (مثلاً
+                5 عملات لكل طلب) لفك حجب بيانات العميل وشراء الطلب. يتم تسجيل كافة عمليات الشحن والشراء في دفتر معاملات
+                رقمي موثق ومحمي.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>متى تظهر بيانات اتصال العميل وعنوانه للصنايعي؟</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                تطبيق صنايعي يطبق معايير خصوصية صارمة على مستوى قاعدة البيانات: قبل شراء الطلب، يظهر للصنايعي فقط وصف
+                العطل، المسافة بالكيلومتر، ومنطقة عامة تقريبية ("منطقة قريبة")، بينما يتم حجب اسم العميل ورقم هاتفه
+                وعنوانه الدقيق بالكامل. وتظهر هذه البيانات حصرياً للصنايعي بعد إتمام عملية شراء الطلب بنجاح.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>هل التطبيق متاح لهواتف آيفون (iOS)؟</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                في الوقت الحالي، يتوفر تطبيق صنايعي حصرياً لهواتف أندرويد عبر ملف التثبيت المباشر (APK) وقريبا علي متجر
+                Google Play.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. Download Section
+         ======================================================================== -->
+    <section class="download-section" id="download">
+      <div class="container">
+
+        <div class="download-banner">
+          <div class="download-banner-grid">
+
+            <div>
+              <div class="banner-badge">
+                <span>نسخة أندرويد الرسمية (APK)</span>
+              </div>
+              <h2 class="banner-title">ابدأ رحلتك مع صنايعي النهارده</h2>
+              <p class="banner-desc">
+                حمّل التطبيق الآن مباشرة على هاتفك الأندرويد واستمتع بتجربة صيانة منزلية فورية وموثوقة، أو ابدأ باستقبال
+                طلبات العمل في منطقتك وتنمية دخلك المهني.
+              </p>
+
+              <div class="banner-actions">
+                <a href="https://drive.google.com/uc?export=download&id=1WtqTTzk5hcb3RIbgCh160lABSYzPp8bq"
+                  class="btn-download-hero" target="_blank" rel="noopener noreferrer" title="تنزيل ملف APK المباشر">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                  </svg>
+                  <span>تحميل تطبيق صنايعي (APK مباشر)</span>
+                </a>
+
+                <div class="apk-spec-tags">
+                  <span>📱 نظام التشغيل: Android 7.0+</span>
+                  <span>🔒 فحص أمني: معتمد وموقع</span>
+                  <span>⚡ تحميل مباشر وسريع</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- APK Installation Guide Card -->
+            <div class="install-guide-box">
+              <h3 class="install-guide-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>خطوات تثبيت ملف الـ APK:</span>
+              </h3>
+
+              <div class="install-steps-list">
+                <div class="install-step-item">
+                  <div class="install-step-num">١</div>
+                  <div>اضغط على زر <strong>تحميل التطبيق</strong> لحفظ ملف الـ APK على هاتفك الأندرويد.</div>
+                </div>
+
+                <div class="install-step-item">
+                  <div class="install-step-num">٢</div>
+                  <div>افتح الملف المحمّل مباشرة من شريط الإشعارات أو من مجلد التنزيلات (Downloads).</div>
+                </div>
+
+                <div class="install-step-item">
+                  <div class="install-step-num">٣</div>
+                  <div>إذا طلب هاتفك الإذن، فعّل خيار <em>"السماح بالتثبيت من هذا المصدر"</em> (Allow from this source).
+                  </div>
+                </div>
+
+                <div class="install-step-item">
+                  <div class="install-step-num">٤</div>
+                  <div>اضغط على <strong>تثبيت (Install)</strong>، ثم افتح تطبيق صنايعي وابدأ استخدامه فوراً!</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Project Idea / Contact CTA Section
+         ======================================================================== -->
+    <section class="project-cta-section" id="project-contact">
+      <div class="container">
+        <div class="project-cta-card">
+          <div class="project-cta-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+            </svg>
+            <span>انطلاقة فكرتك القادمة</span>
+          </div>
+
+          <h2 class="project-cta-title">عندك فكرة مشروع وعايز تنفذها؟</h2>
+
+          <p class="project-cta-desc">
+            عجبك تطبيق صنايعي وعايز تعمل تطبيق أو موقع خاص بمشروعك؟ تواصل معايا ونبدأ نحول فكرتك لواقع.
+          </p>
+
+          <div class="project-cta-buttons">
+            <!-- 1. WhatsApp Button -->
+            <a href="https://wa.me/201010176061" 
+               class="project-btn project-btn-whatsapp" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="تواصل عبر واتساب">
+              <svg class="project-btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+              </svg>
+              <span>واتساب (WhatsApp)</span>
+            </a>
+
+            <!-- 2. LinkedIn Button -->
+            <a href="https://www.linkedin.com/in/mahmoud-hazem-9b2645359/" 
+               class="project-btn project-btn-linkedin" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="تواصل عبر لينكد إن">
+              <svg class="project-btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>لينكد إن (LinkedIn)</span>
+            </a>
+
+            <!-- 3. Email Button -->
+            <a href="mailto:mahmoudhazem8910@gmail.com" 
+               class="project-btn project-btn-email" 
+               aria-label="تواصل عبر البريد الإلكتروني">
+              <svg class="project-btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>البريد الإلكتروني (Email)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. Footer
+       ======================================================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Col 1: Brand & Desc -->
+        <div>
+          <div class="brand-logo" style="margin-bottom: 14px;">
+            <div class="brand-icon-wrapper">
+              <img src="assets/app_icon.png" alt="أيقونة تطبيق صنايعي" class="brand-icon">
+            </div>
+            <span class="brand-title" style="color: var(--white);">صنايعي</span>
+          </div>
+          <p class="footer-brand-desc">
+            المنصة الذكية الرائدة لربط العملاء بأمهر الحرفيين وفنيي الصيانة المنزلية المعتمدين في محيطهم الجغرافي داخل
+            جمهورية مصر العربية.
+          </p>
+          <a href="https://drive.google.com/uc?export=download&id=1WtqTTzk5hcb3RIbgCh160lABSYzPp8bq"
+            class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer" style="display: inline-flex;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+            </svg>
+            <span>تحميل نسخة أندرويد (APK)</span>
+          </a>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">روابط سريعة</h4>
+          <div class="footer-links-list">
+            <a href="#about" class="footer-link">عن صنايعي</a>
+            <a href="#journey" class="footer-link">رحلة الاستخدام</a>
+            <a href="#how-it-works" class="footer-link">دورة العمل والطلب</a>
+            <a href="#features" class="footer-link">مميزات المنصة</a>
+            <a href="#faq" class="footer-link">الأسئلة الشائعة</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Legal & Trust -->
+        <div>
+          <h4 class="footer-col-title">الخصوصية والأمان</h4>
+          <div class="footer-links-list">
+            <a href="https://mahmoudhazem72.github.io/sanay3y-privacy-policy/" class="footer-link" target="_blank"
+              rel="noopener noreferrer">
+              سياسة الخصوصية الرسمية (Privacy Policy)
+            </a>
+            <span style="font-size: 0.88rem; color: var(--gray); margin-top: 10px; display: block; line-height: 1.6;">
+              تطبيق صنايعي يلتزم بحماية بيانات المستخدمين وخصوصية عناوينهم ومواقعهم الجغرافية بدقة وفق أعلى معايير
+              الأمان.
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          جميع الحقوق محفوظة © 2026 <strong>تطبيق صنايعي (Sanay3y)</strong>.
+        </div>
+        <div>
+          <a href="https://mahmoudhazem72.github.io/sanay3y-privacy-policy/" target="_blank" rel="noopener noreferrer">
+            سياسة الخصوصية
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
