@@ -3,13 +3,20 @@
  * Vanilla JavaScript, Zero External Dependencies
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
   initStickyHeader();
   initMobileDrawer();
   initJourneyTabs();
   initFaqAccordion();
   initDownloadButtons();
-});
+}
+
+// Initialize immediately if DOM elements are already available, or on DOMContentLoaded
+if (document.readyState !== 'loading' || document.querySelector('.site-header')) {
+  init();
+} else {
+  document.addEventListener('DOMContentLoaded', init);
+}
 
 /**
  * 1. Sticky Header elevation on scroll
@@ -45,12 +52,14 @@ function initMobileDrawer() {
   const openDrawer = () => {
     drawer.classList.add('open');
     overlay.classList.add('open');
+    toggleBtn.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   };
 
   const closeDrawer = () => {
     drawer.classList.remove('open');
     overlay.classList.remove('open');
+    toggleBtn.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   };
 
@@ -60,6 +69,12 @@ function initMobileDrawer() {
 
   drawerLinks.forEach(link => {
     link.addEventListener('click', closeDrawer);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      closeDrawer();
+    }
   });
 }
 
