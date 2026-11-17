@@ -1490,31 +1490,38 @@ h1, h2, h3, h4, h5 {
    App Support Section
    -------------------------------------------------------------------------- */
 .app-support-section {
-  background: var(--white);
+  background: var(--cream-light);
   padding: 0 0 90px;
-  border-top: 1px solid var(--gray-light);
+  margin-top: -45px;
 }
 
 .app-support-card {
-  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, var(--navy-surface) 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--cream-soft) 100%);
   border-radius: var(--radius-xl);
-  padding: 56px 48px;
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  border: 2px solid var(--beige);
+  padding: 48px 40px;
+  text-align: center;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-support-card:hover {
   box-shadow: var(--shadow-xl);
-  border: 2px solid var(--navy-light);
 }
 
 .app-support-card::before {
   content: '';
   position: absolute;
-  bottom: -80px;
-  left: -80px;
-  width: 280px;
-  height: 280px;
+  top: -70px;
+  right: -70px;
+  width: 200px;
+  height: 200px;
   background: radial-gradient(circle, rgba(37, 211, 102, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
@@ -1523,86 +1530,81 @@ h1, h2, h3, h4, h5 {
 .app-support-card::after {
   content: '';
   position: absolute;
-  top: -60px;
-  right: -60px;
-  width: 220px;
-  height: 220px;
-  background: radial-gradient(circle, rgba(225, 217, 188, 0.12) 0%, transparent 70%);
+  bottom: -70px;
+  left: -70px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(225, 217, 188, 0.35) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
-}
-
-.app-support-icon-wrap {
-  flex-shrink: 0;
-  width: 96px;
-  height: 96px;
-  background: rgba(37, 211, 102, 0.15);
-  border: 2px solid rgba(37, 211, 102, 0.35);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #25D366;
-  position: relative;
-  z-index: 2;
-}
-
-.app-support-body {
-  flex: 1;
-  position: relative;
-  z-index: 2;
 }
 
 .app-support-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(37, 211, 102, 0.15);
-  border: 1px solid rgba(37, 211, 102, 0.4);
-  color: #4ade80;
-  font-size: 0.85rem;
+  background: rgba(37, 211, 102, 0.1);
+  border: 1px solid rgba(37, 211, 102, 0.28);
+  color: #128C7E;
+  font-size: 0.88rem;
   font-weight: 700;
-  padding: 5px 16px;
+  padding: 6px 18px;
   border-radius: var(--radius-full);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
 }
 
 .app-support-title {
-  font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+  font-size: clamp(1.65rem, 2.8vw, 2.2rem);
   font-weight: 900;
-  color: var(--white);
+  color: var(--navy-dark);
   margin-bottom: 14px;
-  line-height: 1.3;
+  line-height: 1.35;
+  position: relative;
+  z-index: 1;
 }
 
 .app-support-desc {
-  font-size: 1.05rem;
-  color: var(--gray-light);
-  line-height: 1.8;
-  margin-bottom: 28px;
-  max-width: 600px;
+  font-size: 1.1rem;
+  color: var(--text-main);
+  line-height: 1.85;
+  max-width: 620px;
+  margin: 0 auto 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.app-support-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .app-support-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
-  padding: 16px 32px;
+  padding: 15px 36px;
   background: #25D366;
   color: #FFFFFF;
   border: 1px solid #20BA5A;
   border-radius: var(--radius-full);
   font-weight: 800;
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   font-family: var(--font-family);
   text-decoration: none;
   transition: all var(--transition-normal);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
   cursor: pointer;
   white-space: nowrap;
 }
 
-.app-support-btn svg {
+.app-support-btn-icon {
   flex-shrink: 0;
   transition: transform var(--transition-fast);
 }
@@ -1611,10 +1613,10 @@ h1, h2, h3, h4, h5 {
   background: #20BA5A;
   color: #FFFFFF;
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.42);
+  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.45);
 }
 
-.app-support-btn:hover svg {
+.app-support-btn:hover .app-support-btn-icon {
   transform: scale(1.1);
 }
 
@@ -2270,52 +2272,39 @@ h1, h2, h3, h4, h5 {
   /* App Support Section */
   .app-support-section {
     padding: 0 0 60px;
+    margin-top: -25px;
   }
 
   .app-support-card {
-    flex-direction: column;
-    text-align: center;
     padding: 36px 20px;
     border-radius: var(--radius-lg);
-    gap: 24px;
-  }
-
-  .app-support-icon-wrap {
-    width: 72px;
-    height: 72px;
-    margin: 0 auto;
-  }
-
-  .app-support-icon-wrap svg {
-    width: 36px;
-    height: 36px;
   }
 
   .app-support-badge {
-    margin-bottom: 12px;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
+    padding: 5px 14px;
+    margin-bottom: 14px;
   }
 
   .app-support-title {
     font-size: clamp(1.45rem, 5vw, 1.85rem);
     margin-bottom: 12px;
+    line-height: 1.35;
   }
 
   .app-support-desc {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 22px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 0.98rem;
+    line-height: 1.75;
+    margin-bottom: 24px;
   }
 
   .app-support-btn {
     width: 100%;
-    justify-content: center;
     padding: 14px 20px;
     font-size: 1rem;
+    min-height: 48px;
     white-space: normal;
-    text-align: center;
+    justify-content: center;
   }
 
   /* Footer */
@@ -2729,29 +2718,22 @@ h1, h2, h3, h4, h5 {
 
   .app-support-card {
     padding: 24px 12px;
-    gap: 18px;
-  }
-
-  .app-support-icon-wrap {
-    width: 58px;
-    height: 58px;
-  }
-
-  .app-support-icon-wrap svg {
-    width: 28px;
-    height: 28px;
   }
 
   .app-support-title {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
+  }
+
+  .app-support-desc {
+    font-size: 0.86rem;
   }
 
   .app-support-btn {
     padding: 11px 12px;
-    font-size: 0.85rem;
+    font-size: 0.86rem;
   }
 
-  .app-support-btn svg {
+  .app-support-btn-icon {
     width: 18px;
     height: 18px;
   }
